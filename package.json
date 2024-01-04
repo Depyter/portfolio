@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.0"
   },
   "scripts": {
-    "build": "tailwindcss build styles.css -o output.css"
+    "build": "tailwindcss build public/styles.css -o output.css"
   }
   
 }
