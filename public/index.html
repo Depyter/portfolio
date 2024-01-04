@@ -1,18 +1,25 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="output.css">
-  <title>Your Website</title>
+  <link rel="stylesheet" href="output.css"> <!-- Include the Tailwind CSS output file -->
+  <title>Sample Tailwind CSS</title>
 </head>
-<body>
+<body class="bg-gray-100">
 
-<div class="container mx-auto p-4">
-  <h1 class="small font-bold mb-4">Hello, Tailwind!</h1>
-  <p class="text-lg text-gray-700">This is a sample paragraph styled with Tailwind CSS.</p>
-</div>
+  <div class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold text-blue-600">Welcome to Tailwind CSS</h1>
+    
+    <p class="mt-4 text-gray-700">
+      Tailwind CSS is a utility-first CSS framework that provides low-level utility classes
+      to build designs directly in your markup.
+    </p>
+
+    <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+      Click me!
+    </button>
+  </div>
 
 </body>
 </html>
