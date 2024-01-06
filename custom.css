@@ -2,5 +2,30 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 /* Your additional custom styles go here */
+
+.hans-font {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+#temp-banner {
+color: #1E1E1E;
+font-family: Black Han Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2rem;
+}
+  
+#temp-banner-2 {
+color: #F70;
+font-family: Black Han Sans;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.5rem;
+}
