@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
 /* styles.css */
 
 /* ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com */
@@ -546,12 +548,60 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.left-\[1100px\]{
+  left: 1100px;
+}
+
+.left-\[1277px\]{
+  left: 1277px;
+}
+
+.left-\[42px\]{
+  left: 42px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-\[19px\]{
+  top: 19px;
+}
+
+.top-\[24px\]{
+  top: 24px;
+}
+
+.mr-\[-28\.80px\]{
+  margin-right: -28.80px;
+}
+
 .flex{
   display: flex;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .h-screen{
   height: 100vh;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-col{
@@ -566,14 +616,67 @@ video {
   justify-content: center;
 }
 
-.p-3{
-  padding: 0.75rem;
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-\[2\.6875rem\]{
+  padding: 2.6875rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[32px\]{
+  font-size: 32px;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
+.tracking-\[2\.7rem\]{
+  letter-spacing: 2.7rem;
+}
+
+.tracking-\[28\.80px\]{
+  letter-spacing: 28.80px;
+}
+
+.tracking-tight{
+  letter-spacing: -0.025em;
+}
+
+.text-orange-500{
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+.text-stone-900{
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
 }
 
 /* Your additional custom styles go here */
 
 .hans-font {
   font-family: 'Black Han Sans', sans-serif;
+}
+
+.ibm-font {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 #temp-banner {
@@ -595,3 +698,34 @@ video {
   line-height: normal;
   letter-spacing: 1.5rem;
 }
+
+@media (min-width: 768px){
+  .md\:mr-\[-57\.12px\]{
+    margin-right: -57.12px;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:tracking-\[57\.12px\]{
+    letter-spacing: 57.12px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mr-\[-114\.24px\]{
+    margin-right: -114.24px;
+  }
+
+  .xl\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .xl\:tracking-\[114\.24px\]{
+    letter-spacing: 114.24px;
+  }
+}
+
