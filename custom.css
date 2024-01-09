@@ -36,3 +36,8 @@ line-height: normal;
 letter-spacing: 1.5rem;
 }
 
+.text-outline {
+    -webkit-text-stroke: 1px #FF7600;
+  }
+  
+
