@@ -3,11 +3,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
 
 /* Your additional custom styles go here */
 
 .hans-font {
     font-family: 'Black Han Sans', sans-serif;
+}
+
+.ibm-font {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 #temp-banner {
@@ -29,3 +35,9 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 1.5rem;
 }
+
+.text-outline {
+    -webkit-text-stroke: 1px #FF7600;
+  }
+  
+
