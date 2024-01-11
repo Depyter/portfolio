@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 /* styles.css */
 
 /* ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com */
@@ -564,8 +566,16 @@ video {
   top: 60px;
 }
 
+.mb-\[40px\]{
+  margin-bottom: 40px;
+}
+
 .ml-5{
   margin-left: 1.25rem;
+}
+
+.ml-\[60px\]{
+  margin-left: 60px;
 }
 
 .ml-auto{
@@ -578,6 +588,14 @@ video {
 
 .mr-\[-19\.80px\]{
   margin-right: -19.80px;
+}
+
+.mr-\[60px\]{
+  margin-right: 60px;
+}
+
+.mt-\[60px\]{
+  margin-top: 60px;
 }
 
 .block{
@@ -596,8 +614,12 @@ video {
   height: 5rem;
 }
 
-.h-\[55vh\]{
-  height: 55vh;
+.h-\[458px\]{
+  height: 458px;
+}
+
+.h-\[60vh\]{
+  height: 60vh;
 }
 
 .h-full{
@@ -611,6 +633,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.basis-4\/6{
+  flex-basis: 66.666667%;
+}
+
+.basis-5\/12{
+  flex-basis: 41.666667%;
 }
 
 .cursor-pointer{
@@ -631,6 +661,25 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.border-\[30px\]{
+  border-width: 30px;
+}
+
+.border-orange-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+}
+
+.bg-stone-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-3{
@@ -657,9 +706,19 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -673,6 +732,10 @@ video {
 
 .font-normal{
   font-weight: 400;
+}
+
+.tracking-\[16\.60px\]{
+  letter-spacing: 16.60px;
 }
 
 .tracking-\[19\.80px\]{
@@ -711,6 +774,10 @@ video {
 
 .ibm-font {
   font-family: 'IBM Plex Mono', monospace;
+}
+
+.roboto-font {
+  font-family: 'Roboto Mono', monospace;
 }
 
 #temp-banner {
@@ -771,6 +838,10 @@ video {
     margin-right: -30.12px;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -782,17 +853,26 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xl\:mr-\[-57\.60px\]{
     margin-right: -57.60px;
   }
 
-  .xl\:h-screen{
-    height: 100vh;
+  .xl\:h-\[90vh\]{
+    height: 90vh;
   }
 
   .xl\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .xl\:pl-\[16\.60px\]{
+    padding-left: 16.60px;
   }
 
   .xl\:text-8xl{
@@ -804,5 +884,3 @@ video {
     letter-spacing: 57.60px;
   }
 }
-  
-

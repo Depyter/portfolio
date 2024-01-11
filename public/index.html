@@ -15,8 +15,8 @@
     </a> 
   </div>
   <div class="flex ml-auto mr-5 w-fit h-full items-center">
-    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight">Projects</div>
-    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight">About</div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">Projects</a></div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">About</a></div>
 
     <!-- Hamburger Icon -->
     <div class="sm:hidden" id="mobile-menu-toggle">
@@ -25,24 +25,36 @@
 
     <!-- Mobile Menu -->
     <div class="hidden absolute top-[60px] right-0 mr-5" id="mobile-menu">
-      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight">Projects</div>
-      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight">About</div>
-    </div>
+      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight"><a href="#">Projects</a></div>
+      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight"><a href="#">About</a></div>
+    </div><a href="#"></a>
+</div>
 
-  </div>
-</div> 
-
-<div class="flex justify-center flex-col items-center h-[55vh] xl:h-screen space-around">
+<div class="flex justify-center flex-col items-center h-[60vh] xl:h-[90vh] space-around" style="background-image: url('assets/bg_icon.svg'); background-size: cover;">
   <div class="text-orange-500 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
   <div class="text-stone-900 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
-  <div class="text-white text-outline text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
+  <div class="text-white text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5" id="hero-outline" style="-webkit-text-stroke: 1px #FF7600;">HEY HARLEY</div>
 </div>
+
+<div class="w-full h-[458px] relative flex flex-col md:flex-row">
+  <div class="basis-5/12 h-full">
+    <img class="border-[30px] border-orange-500 object-cover h-full w-full" src="assets/harley.jpg"/>
+  </div>
+  <div class="basis-4/6 h-full bg-stone-900 flex flex-col">
+    <div class="ml-[60px] xl:mx-auto mt-[60px] mb-[40px] relative text-white text-3xl font-normal hans-font tracking-[16.60px] xl:pl-[16.60px]">BUT WHO IS HARLEY?</div>
+    <div class="ml-[60px] mr-[60px] mb-[40px] relative text-white text-lg font-normal roboto-font">Lorem ipsum dolor sit amet consectetur. Dui congue ut commodo diam maecenas a quam cras. Mattis quisque luctus in varius dolor. Bibendum mauris laoreet cras felis fringilla leo fames laoreet. Libero risus auctor non nisl diam viverra sed turpis leo.</div>
+    <div class="ml-[60px] mr-[60px] relative text-white text-lg font-normal roboto-font">Lorem ipsum dolor sit amet consectetur. Dui congue ut commodo diam maecenas a quam cras.</div>
+  </div>
+  
+  
+</div>
+
 
 <script>
   var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
   var mobileMenu = document.getElementById('mobile-menu');
   var menuIcon = document.getElementById('menu-icon');
-  var isOpen = false;
+  var heroOutline = document.getElementById('hero-outline');
 
   function isScreenWidthGreaterThan640() {
         return window.innerWidth > 640;
@@ -59,11 +71,19 @@
       }
   });
 
+  if (isScreenWidthGreaterThan640()) {
+    heroOutline.style.webkitTextStrokeWidth = "3px";
+  }
+
   window.addEventListener('resize', function () {
     if (isScreenWidthGreaterThan640()) {
         mobileMenu.classList.toggle('hidden', true)
         menuIcon.src = 'assets/burger.svg'
-    } 
+        heroOutline.style.webkitTextStrokeWidth = "3px";
+    }
+    else {
+        heroOutline.style.webkitTextStrokeWidth = "1px";
+    }
 });
 
 
