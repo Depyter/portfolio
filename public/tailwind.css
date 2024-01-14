@@ -591,8 +591,16 @@ video {
   margin-right: 1.25rem;
 }
 
+.mr-\[-15\.20px\]{
+  margin-right: -15.20px;
+}
+
 .mr-\[-19\.80px\]{
   margin-right: -19.80px;
+}
+
+.mr-\[-6px\]{
+  margin-right: -6px;
 }
 
 .mr-\[60px\]{
@@ -611,20 +619,36 @@ video {
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
+}
+
+.h-1\/4{
+  height: 25%;
 }
 
 .h-20{
   height: 5rem;
 }
 
+.h-3\/4{
+  height: 75%;
+}
+
+.h-\[1200px\]{
+  height: 1200px;
+}
+
 .h-\[170px\]{
   height: 170px;
 }
 
-.h-\[60vh\]{
-  height: 60vh;
+.h-\[40vh\]{
+  height: 40vh;
 }
 
 .h-full{
@@ -634,6 +658,10 @@ video {
 .h-max{
   height: -moz-max-content;
   height: max-content;
+}
+
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .w-fit{
@@ -657,6 +685,10 @@ video {
   resize: both;
 }
 
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -671,6 +703,14 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-items-center{
+  justify-items: center;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .overflow-auto{
@@ -718,9 +758,23 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-\[250px\]{
   padding-top: 250px;
   padding-bottom: 250px;
+}
+
+.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pt-\[50px\]{
+  padding-top: 50px;
 }
 
 .text-2xl{
@@ -731,6 +785,11 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -746,12 +805,20 @@ video {
   font-weight: 400;
 }
 
+.tracking-\[15\.20px\]{
+  letter-spacing: 15.20px;
+}
+
 .tracking-\[19\.80px\]{
   letter-spacing: 19.80px;
 }
 
 .tracking-\[5px\]{
   letter-spacing: 5px;
+}
+
+.tracking-\[6px\]{
+  letter-spacing: 6px;
 }
 
 .tracking-tight{
@@ -876,6 +943,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:mr-\[-21\.60px\]{
+    margin-right: -21.60px;
+  }
+
   .md\:mr-\[-30\.12px\]{
     margin-right: -30.12px;
   }
@@ -886,6 +957,10 @@ video {
 
   .md\:w-\[58\%\]{
     width: 58%;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -901,8 +976,29 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:tracking-\[21\.60px\]{
+    letter-spacing: 21.60px;
+  }
+
   .md\:tracking-\[30\.12px\]{
     letter-spacing: 30.12px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
