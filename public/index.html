@@ -82,16 +82,28 @@
     </div>
 </div>
 
+<div class="py-5"></div>
+
+<!-- Footer -->
 <div class="w-full h-[101px] relative bg-stone-900">
   <div class="w-[428px] h-[21px] left-[542px] top-[40px] absolute text-white text-2xl font-bold font-['IBM Plex Mono'] tracking-tight">designed by harley van acabal</div>
-  <div class="w-12 h-12 left-[26px] top-[27px] absolute"></div>
-  <div class="w-12 h-12 left-[260px] top-[27px] absolute"></div>
-  <div class="w-12 h-12 left-[182px] top-[26px] absolute"></div>
-  <div class="w-12 h-12 left-[104px] top-[27px] absolute"></div>
+  <div class="w-12 h-12 left-[26px] top-[27px] absolute">
+    <img src="assets/github.svg" alt="GitHub" style="max-width: 35px; max-height: 35px;">
+  </div>
+  <div class="w-12 h-12 left-[260px] top-[27px] absolute">
+    <img src="assets/facebook.svg" alt="Facebook" style="max-width: 35px; max-height: 35px;">
+  </div>
+  <div class="w-12 h-12 left-[182px] top-[26px] absolute">
+    <img src="assets/linkedin.svg" alt="LinkedIn" style="max-width: 35px; max-height: 35px;">
+  </div>
+  <div class="w-12 h-12 left-[104px] top-[27px] absolute">
+    <img src="assets/instagram.png" alt="Instagram" style="max-width: 35px; max-height: 35px;">
+  </div>
 </div>
 
 <script>
-  var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+
+var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 var mobileMenu = document.getElementById('mobile-menu');
 var menuIcon = document.getElementById('menu-icon');
 var heroOutline = document.getElementById('hero-outline');
@@ -123,13 +135,27 @@ if (!isScreenWidthGreaterThan768()) {
   meImage.classList.add('h-[170px]')
 }
 
-window.addEventListener('resize', function () {
+// Debounce function
+function debounce(func, wait) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+};
+
+var optimizedResize = debounce(function() {
   if (isScreenWidthGreaterThan768() && meImage.classList.contains('h-[170px]')) {
     meImage.classList.remove('h-[170px]');
   }
   if (!isScreenWidthGreaterThan768()) {
-      meImage.classList.add('h-[170px]');
-    }
+    meImage.classList.add('h-[170px]');
+  }
 
   if (isScreenWidthGreaterThan640()) {
     mobileMenu.classList.add('hidden');
@@ -138,8 +164,9 @@ window.addEventListener('resize', function () {
   } else {
     heroOutline.style.webkitTextStrokeWidth = "1px";
   }
-});
+}, 50);
 
+window.addEventListener('resize', optimizedResize);
 
 </script>
 

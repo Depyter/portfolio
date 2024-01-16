@@ -829,6 +829,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[50px\]{
   padding-top: 50px;
   padding-bottom: 50px;
