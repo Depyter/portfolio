@@ -73,32 +73,34 @@
 
 <!-- Contact me -->
 <div class="bg-stone-900 flex flex-col md:flex-row">
-    <div class="basis-[9/10]">
-      <div class="ml-[35px] sm:ml-[60px] py-[50px] text-white text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">REACH OUT TO ME</div>
+    <div class="flex flex-col basis-[9/10] overflow-auto">
+      <div class="mx-auto sm:ml-[60px] xl:mx-auto mt-[20px] sm:mt-[60px] mb-[15px] sm:mb-[40px] relative text-white text-base sm:text-4xl font-normal hans-font tracking-[5px] sm:tracking-[16.60px] xl:pl-[16.60px]">REACH OUT TO ME</div>
       <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae maxime, libero pariatur consectetur doloremque harum provident quia? Quibusdam cumque qui consectetur cum, tenetur totam deserunt harum voluptatem quidem animi iste ut quisquam explicabo rem officia corporis consequuntur dolores officiis similique fugit consequatur illo. Qui tempora magni obcaecati. Amet, numquam iste!</div>
     </div>
-    <div class="basis-1 grow border-8 sm:border-[30px] border-orange-500 min-w-[350px]">
-      <img class="object-cover h-full w-full" src="assets/flower.JPG" alt="">
+    <div class="basis-1 grow border-8 sm:border-[30px] border-orange-500 min-w-[350px] ">
+      <img class="object-cover w-full h-[240px] md:h-full " src="assets/flower.JPG" alt="">
     </div>
 </div>
 
 <div class="py-5"></div>
 
 <!-- Footer -->
-<div class="w-full h-[101px] relative bg-stone-900">
-  <div class="w-[428px] h-[21px] left-[542px] top-[40px] absolute text-white text-2xl font-bold font-['IBM Plex Mono'] tracking-tight">designed by harley van acabal</div>
-  <div class="w-12 h-12 left-[26px] top-[27px] absolute">
-    <img src="assets/github.svg" alt="GitHub" style="max-width: 35px; max-height: 35px;">
+<div class="flex flex-col md:flex-row w-full h-[101px] relative bg-stone-900 items-center justify-center md:justify-start">
+  <div class="flex">
+      <a href="https://github.com/yourusername">
+      <img src="assets/github.svg" alt="GitHub" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.facebook.com/yourusername">
+      <img src="assets/facebook.svg" alt="Facebook" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.linkedin.com/in/yourusername">
+      <img src="assets/linkedin.svg" alt="LinkedIn" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.instagram.com/yourusername">
+      <img src="assets/instagram.png" alt="Instagram" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
   </div>
-  <div class="w-12 h-12 left-[260px] top-[27px] absolute">
-    <img src="assets/facebook.svg" alt="Facebook" style="max-width: 35px; max-height: 35px;">
-  </div>
-  <div class="w-12 h-12 left-[182px] top-[26px] absolute">
-    <img src="assets/linkedin.svg" alt="LinkedIn" style="max-width: 35px; max-height: 35px;">
-  </div>
-  <div class="w-12 h-12 left-[104px] top-[27px] absolute">
-    <img src="assets/instagram.png" alt="Instagram" style="max-width: 35px; max-height: 35px;">
-  </div>
+  <div class="text-white text-sm ibm-font pt-2">designed by harley van acabal</div>
 </div>
 
 <script>
@@ -132,7 +134,7 @@ if (isScreenWidthGreaterThan640()) {
 }
 
 if (!isScreenWidthGreaterThan768()) {
-  meImage.classList.add('h-[170px]')
+  meImage.classList.add('h-[240px]')
 }
 
 // Debounce function
@@ -150,11 +152,11 @@ function debounce(func, wait) {
 };
 
 var optimizedResize = debounce(function() {
-  if (isScreenWidthGreaterThan768() && meImage.classList.contains('h-[170px]')) {
-    meImage.classList.remove('h-[170px]');
+  if (isScreenWidthGreaterThan768() && meImage.classList.contains('h-[240px]')) {
+    meImage.classList.remove('h-[240px]');
   }
   if (!isScreenWidthGreaterThan768()) {
-    meImage.classList.add('h-[170px]');
+    meImage.classList.add('h-[240px]');
   }
 
   if (isScreenWidthGreaterThan640()) {
@@ -164,7 +166,7 @@ var optimizedResize = debounce(function() {
   } else {
     heroOutline.style.webkitTextStrokeWidth = "1px";
   }
-}, 50);
+}, 20);
 
 window.addEventListener('resize', optimizedResize);
 
