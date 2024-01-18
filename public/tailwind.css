@@ -618,6 +618,10 @@ video {
   margin-right: 60px;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .mt-\[-12px\]{
   margin-top: -12px;
 }
@@ -1107,6 +1111,10 @@ video {
 
   .md\:mr-\[-30\.12px\]{
     margin-right: -30.12px;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
   }
 
   .md\:h-full{
