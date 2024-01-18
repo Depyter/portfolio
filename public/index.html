@@ -8,13 +8,13 @@
 </head>
 <body>
 <!-- Nav bar div -->
-<div class="w-full h-20 relative">
+<div class="w-full h-20 relative border-b border-stone-900" id="navbar">
   <div class="h-full px-2 absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight flex items-center ml-5">
     <a href="#">
       harleyvan
     </a> 
   </div>
-  <div class="flex ml-auto mr-5 w-fit h-full items-center">
+  <div class="flex ml-auto mr-5 w-fit h-full items-center ">
     <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">Projects</a></div>
     <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">About</a></div>
 
@@ -24,28 +24,31 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="hidden absolute top-[60px] right-0 mr-5" id="mobile-menu">
-      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight"><a href="#">Projects</a></div>
-      <div class="p-3 relative text-xs font-normal ibm-font tracking-tight"><a href="#">About</a></div>
-    </div><a href="#"></a>
+    
+  </div>
+  <div class="max-h-0 transition-all bg-white overflow-hidden mt-[-12px]" id="mobile-menu">
+    <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">Projects</a></div>
+    <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">About</a></div>
   </div>
 </div>
 
 <!-- Hero row -->
 <div class="flex justify-center flex-col items-center h-[40vh] xl:h-[90vh] space-around bg-cover" style="background-image: url('assets/bg_icon.svg');">
-  <div class="text-orange-500 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
-  <div class="text-stone-900 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
-  <div class="text-white text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5" id="hero-outline" style="-webkit-text-stroke: 1px #FF7600;">HEY HARLEY</div>
+  <div class="text-orange-500 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-right animate-once animate-duration-[1100ms] animate-ease-in-out">HEY HARLEY</div>
+  <div class="text-stone-900 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-left animate-once animate-duration-[1100ms] animate-ease-in-out">HEY HARLEY</div>
+  <div class="text-white text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-up animate-once animate-duration-[1100ms] animate-ease-in-out" id="hero-outline" style="-webkit-text-stroke: 1px #FF7600;">HEY HARLEY</div>
 </div>
 
 <!-- About me -->
-<div class="w-full relative flex flex-col md:flex-row items-stretch align-center">
-  <div id="me-image" class="md:self-stretch w-full md:w-[42%] border-8 sm:border-[30px] border-orange-500 bg-center bg-cover" style="background-image: url('assets/harley.jpg');"></div>
-  <div class="flex-1 flex h-max w-full md:w-[58%] bg-stone-900 flex flex-col overflow-auto">
+<div class="bg-stone-900 flex flex-col md:flex-row">
+  <div class="basis-[42%] shrink border-8 sm:border-[30px] border-orange-500 min-w-[250px] ">
+    <img class="object-cover w-full h-[210px] md:h-full xl:max-h-[380px]" src="assets/harley.jpg" alt="">
+  </div>
+  <div class="flex flex-col basis-[58%] grow overflow-auto">
     <div class="mx-auto sm:ml-[60px] xl:mx-auto mt-[20px] sm:mt-[60px] mb-[15px] sm:mb-[40px] relative text-white text-base sm:text-4xl font-normal hans-font tracking-[5px] sm:tracking-[16.60px] xl:pl-[16.60px]">BUT WHO IS HARLEY?</div>
     <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Lorem ipsum dolor sit amet consectetur. Dui congue ut commodo diam maecenas a quam cras. Mattis quisque luctus in varius dolor. Bibendum mauris laoreet cras felis fringilla leo fames laoreet. Libero risus auctor non nisl diam viverra sed turpis leo.</div>
     <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Lorem ipsum dolor sit amet consectetur. Dui congue ut commodo diam maecenas a quam cras.</div>
-  </div> 
+  </div>
 </div>
 
 <!-- Headline and featured site-->
@@ -53,11 +56,10 @@
   <div class="py-[50px] text-stone-900 text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">HE GOT ANY PROJECTS?</div>
 </div>
 
-<div class=" py-4 flex flex-col h-fit">
-
+<div class=" pb-4 flex flex-col h-fit">
   <!-- Featured site -->
-  <div class="h-full">
-    <img class="h-full mx-auto" src="assets/featured_site.png" alt="">
+  <div class="h-full mx-[30px] md:mx-[90px] border-[3px] border-orange-500 mb-[70px]">
+    <img class="h-full" src="assets/featured_site.png" alt="">
   </div>
 
   <!-- Other projects -->
@@ -78,7 +80,7 @@
       <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae maxime, libero pariatur consectetur doloremque harum provident quia? Quibusdam cumque qui consectetur cum, tenetur totam deserunt harum voluptatem quidem animi iste ut quisquam explicabo rem officia corporis consequuntur dolores officiis similique fugit consequatur illo. Qui tempora magni obcaecati. Amet, numquam iste!</div>
     </div>
     <div class="basis-1 grow border-8 sm:border-[30px] border-orange-500 min-w-[350px] ">
-      <img class="object-cover w-full h-[240px] md:h-full " src="assets/flower.JPG" alt="">
+      <img class="object-cover w-full h-[240px] md:h-full xl:max-h-[380px]" src="assets/flower.JPG" alt="">
     </div>
 </div>
 
@@ -87,20 +89,21 @@
 <!-- Footer -->
 <div class="flex flex-col md:flex-row w-full h-[101px] relative bg-stone-900 items-center justify-center md:justify-start">
   <div class="flex">
-      <a href="https://github.com/yourusername">
+      <a href="https://github.com/Depyter">
       <img src="assets/github.svg" alt="GitHub" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
     </a>
-    <a href="https://www.facebook.com/yourusername">
+    <a href="https://www.facebook.com/harley.acabal/">
       <img src="assets/facebook.svg" alt="Facebook" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
     </a>
-    <a href="https://www.linkedin.com/in/yourusername">
-      <img src="assets/linkedin.svg" alt="LinkedIn" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
-    </a>
-    <a href="https://www.instagram.com/yourusername">
+    <a href="https://www.instagram.com/harleyacabal/">
       <img src="assets/instagram.png" alt="Instagram" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
     </a>
+    <a href="www.linkedin.com/in/depyter-harleyvan">
+      <img src="assets/linkedin.svg" alt="LinkedIn" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    
   </div>
-  <div class="text-white text-sm ibm-font pt-2">designed by harley van acabal</div>
+  <div class="text-white text-sm ibm-font">designed by harley van acabal</div>
 </div>
 
 <script>
@@ -109,32 +112,31 @@ var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 var mobileMenu = document.getElementById('mobile-menu');
 var menuIcon = document.getElementById('menu-icon');
 var heroOutline = document.getElementById('hero-outline');
-var meImage = document.getElementById('me-image');
 
 function isScreenWidthGreaterThan640() {
   return window.innerWidth >= 640;
 }
 
-function isScreenWidthGreaterThan768() {
-  return window.innerWidth >= 768;
-}
-
 mobileMenuToggle.addEventListener('click', function () {
   // Toggle visibility using Tailwind classes
-  mobileMenu.classList.toggle('hidden');
-  if (!mobileMenu.classList.contains('hidden')) {
-    menuIcon.src = 'assets/close.svg'
+  if (!mobileMenu.classList.contains('max-h-20')) {
+    menuIcon.src = 'assets/close.svg';
+    mobileMenu.classList.remove('max-h-0');
+    mobileMenu.classList.add('max-h-20');
+    mobileMenu.classList.add('border-b');
+    mobileMenu.classList.add('border-stone-900');
   } else {
-    menuIcon.src = 'assets/burger.svg'
+    menuIcon.src = 'assets/burger.svg';
+    mobileMenu.classList.remove('max-h-20');
+    mobileMenu.classList.add('max-h-0');
+    mobileMenu.classList.remove('border-b');
+    mobileMenu.classList.remove('border-stone-900');
   }
+  
 });
 
 if (isScreenWidthGreaterThan640()) {
   heroOutline.style.webkitTextStrokeWidth = "3px";
-}
-
-if (!isScreenWidthGreaterThan768()) {
-  meImage.classList.add('h-[240px]')
 }
 
 // Debounce function
@@ -152,15 +154,12 @@ function debounce(func, wait) {
 };
 
 var optimizedResize = debounce(function() {
-  if (isScreenWidthGreaterThan768() && meImage.classList.contains('h-[240px]')) {
-    meImage.classList.remove('h-[240px]');
-  }
-  if (!isScreenWidthGreaterThan768()) {
-    meImage.classList.add('h-[240px]');
-  }
 
-  if (isScreenWidthGreaterThan640()) {
-    mobileMenu.classList.add('hidden');
+  if (window.innerWidth >= 640) {
+    mobileMenu.classList.remove('max-h-20');
+    mobileMenu.classList.add('max-h-0');
+    mobileMenu.classList.remove('border-b');
+    mobileMenu.classList.remove('border-stone-900');
     menuIcon.src = 'assets/burger.svg';
     heroOutline.style.webkitTextStrokeWidth = "3px";
   } else {

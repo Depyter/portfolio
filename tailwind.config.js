@@ -3,4 +3,7 @@ module.exports = {
     './public/index.html',
     './custom.css',
   ],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
