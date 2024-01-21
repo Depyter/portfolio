@@ -8,7 +8,8 @@
 </head>
 <body>
 <!-- Nav bar div -->
-<div class="w-full h-20 relative border-b-4 border-stone-900" id="navbar">
+<div class="w-full h-20 relative border-b-2 md:border-b-4 border-stone-900" id="navbar">
+  <!-- Harley logo sorta-->
   <div class="h-full px-2 absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight flex items-center ml-5">
     <a href="#">
       harleyvan
@@ -22,10 +23,10 @@
     <div class="sm:hidden" id="mobile-menu-toggle">
         <img src="assets/burger.svg" alt="Hamburger Icon" class="cursor-pointer block text-black hover:text-gray-300 px-2" id="menu-icon">
     </div>
-
-    <!-- Mobile Menu -->
     
   </div>
+
+  <!-- Mobile menu-->
   <div class="max-h-0 transition-all bg-white overflow-hidden mt-[-12px]" id="mobile-menu">
     <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">Projects</a></div>
     <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">About</a></div>
@@ -59,57 +60,64 @@
   </div>
 
   <!-- Featured site -->
-  <div class="h-full mx-[30px] md:mx-[90px] border-8 border-orange-500 mb-[50px]">
+  <div class="h-full mx-[30px] md:mx-[120px] border-8 border-orange-500 mb-[50px]">
     <img class="h-full" src="assets/featured_site.png" alt="">
   </div>
+<!-- Link and info -->
+  <div class="w-[305px] h-11 relative">
+    <div class="w-[305px] h-11 left-0 top-0 absolute bg-stone-900"></div>
+    <div class="w-[252.50px] h-[31px] left-[27px] top-[6px] absolute text-white text-2xl font-bold font-['IBM Plex Mono']">GO TO THE WEBSITE</div>
+  </div>
 
+  <!-- Other projects -->
   <div class="flex w-full justify-center">
     <div class="text-stone-900 text-xs md:text-sm lg:text-base font-normal hans-font tracking-[3px] md:tracking-[18.60px] mr-[-3px] md:mr-[-18.60px]">OTHER PROJECTS COMING SOON</div>
   </div>
 
+  
 </div>
 
   <!-- Hobbies -->
   <div class="h-fit py-9 bg-cover border-y-4 border-stone-900 mb-[80px] bg-stone-900">
     <div class="flex justify-center"><span class="text-white text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">HOBBIES</span></div>
-    <div class="pt-[50px] grid grid-cols-69 gap-[25px] mx-[30px] md:mx-[90px]">
+    <div class="pt-[50px] grid grid-cols-69 gap-[35px] mx-[30px] md:mx-[90px]">
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">COFFEE</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[200px] md:min-h-[250px] border-b-[15px] border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/coffee.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[190px] border-b-4 border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/coffee.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
       </div>
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">BOARD GAMES</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[200px] md:min-h-[250px] border-b-[15px] border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/root.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[190px] border-b-4 border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/root.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
       </div>  
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">FOOD</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[200px] md:min-h-[250px] border-b-[15px] border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/crepe.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[190px] border-b-4 border-orange-500" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0) 20%,rgba(28,25,23,1) 100%), url('assets/crepe.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
       </div>     
     </div>
   </div>
 
   <!-- Skills -->
-  <div class="h-fit py-9 mb-[80px]">
+  <div class="h-fit mb-[80px]">
     <div class="flex justify-center"><span class="text-stone-900 text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">SKILLS</span></div>
-    <div class="pt-[50px] grid grid-cols-69 gap-[25px] mx-[30px] md:mx-[90px]">
-      <div class="flex flex-col border-[15px] border-orange-500 h-fit w-full">
-          <img src="assets/coffee.jpg" class="max-h-[300px] md:max-h-[400px] w-full object-cover object-center" alt="">
-          <span class="ibm-font text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-    </div>
-      <div class="flex flex-col border-[15px] border-orange-500 h-fit w-full">
-          <img src="assets/root.jpg" class="max-h-[300px] md:max-h-[400px] w-full object-cover" alt="">
-          <span class="ibm-font text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-    </div>
-      <div class="flex flex-col border-[15px] border-orange-500 h-fit w-full ">
-          <img src="assets/crepe.jpg" class="max-h-[300px] md:max-h-[400px] w-full object-cover" alt="">
-          <span class="ibm-font text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-    </div>
+    <div class="pt-[50px] grid grid-rows-3 gap-[35px] mx-[30px] md:mx-[90px]">
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/coffee.jpg');">
+          <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Curiosity</div>
+          <span class="ibm-font text-stone-900 max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      </div>
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center place-content-end" style="background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/coffee.jpg');">
+        <span class="ibm-font text-stone-900 max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <div class="hans-font tracking-[6px] mr-[-6px] mr-[32px] my-[24px] md:my-auto">Curiosity</div>
+      </div>
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/coffee.jpg');">
+        <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Curiosity</div>
+        <span class="ibm-font text-stone-900 max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      </div>
     </div>
   </div>
 
@@ -162,13 +170,13 @@ mobileMenuToggle.addEventListener('click', function () {
     menuIcon.src = 'assets/close.svg';
     mobileMenu.classList.remove('max-h-0');
     mobileMenu.classList.add('max-h-20');
-    mobileMenu.classList.add('border-b');
+    mobileMenu.classList.add('border-b-2');
     mobileMenu.classList.add('border-stone-900');
   } else {
     menuIcon.src = 'assets/burger.svg';
     mobileMenu.classList.remove('max-h-20');
     mobileMenu.classList.add('max-h-0');
-    mobileMenu.classList.remove('border-b');
+    mobileMenu.classList.remove('border-b-2');
     mobileMenu.classList.remove('border-stone-900');
   }
   
@@ -197,7 +205,7 @@ var optimizedResize = debounce(function() {
   if (window.innerWidth >= 640) {
     mobileMenu.classList.remove('max-h-20');
     mobileMenu.classList.add('max-h-0');
-    mobileMenu.classList.remove('border-b');
+    mobileMenu.classList.remove('border-b-2');
     mobileMenu.classList.remove('border-stone-900');
     menuIcon.src = 'assets/burger.svg';
     heroOutline.style.webkitTextStrokeWidth = "3px";
