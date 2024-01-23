@@ -8,23 +8,159 @@
 </head>
 <body>
 <!-- Nav bar div -->
-<div class="w-full h-20 relative">
-  <div class="left-[42px] top-[19px] absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight">
-    <a href="#">
+<div class="w-full h-20 relative border-b-2 md:border-b-4 border-stone-900 z-50" id="navbar">
+  <!-- Harley logo sorta-->
+  <div class="h-full px-2 absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight flex items-center ml-5">
+    <a href="index.html">
       harleyvan
     </a> 
   </div>
-  <div class="flex ml-auto mr-5 w-fit h-full items-center">
-      <div class="px-3 inline-block relative text-2xl font-normal ibm-font tracking-tight">Projects</div>
-    <div class="px-3 inline-block relative text-2xl font-normal ibm-font tracking-tight">About</div>
-  </div>
-</div> 
+  <div class="flex ml-auto mr-5 w-fit h-full items-center ">
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
 
-<div class="flex justify-center flex-col items-center h-[55vh] xl:h-screen space-around">
-  <div class="text-orange-500 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
-  <div class="text-stone-900 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
-  <div class="text-white text-outline text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5">HEY HARLEY</div>
+    <!-- Hamburger Icon -->
+    <div class="sm:hidden" id="mobile-menu-toggle">
+        <img src="assets/burger.svg" alt="Hamburger Icon" class="cursor-pointer block text-black hover:text-gray-300 px-2" id="menu-icon">
+    </div>
+    
+  </div>
+
+  <!-- Mobile menu-->
+  <div class="bg-white menu-transition-closed border-b-2 border-stone-900" id="mobile-menu">
+    <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
+  </div>
 </div>
 
+<!-- Hero row -->
+<div class="flex justify-center flex-col items-center h-[40vh] xl:h-[90vh] space-around bg-cover" style="background-image: url('assets/bg_icon.svg');">
+  <div class="text-orange-500 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-right animate-once animate-duration-[1100ms] animate-ease-in-out">HEY HARLEY</div>
+  <div class="text-stone-900 text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-left animate-once animate-duration-[1100ms] animate-ease-in-out">HEY HARLEY</div>
+  <div class="text-white text-2xl sm:text-5xl xl:text-8xl font-normal hans-font tracking-[19.80px] mr-[-19.80px] md:tracking-[30.12px] md:mr-[-30.12px] xl:tracking-[57.60px] xl:mr-[-57.60px] py-1 sm:py-2 md:py-3 xl:py-5 animate-fade-up animate-once animate-duration-[1100ms] animate-ease-in-out" id="hero-outline" style="-webkit-text-stroke: 1px #FF7600;">HEY HARLEY</div>
+</div>
+
+<!-- About me -->
+<div class="bg-stone-900 flex flex-col md:flex-row">
+  <div class="basis-[42%] shrink border-8 sm:border-[30px] border-orange-500 min-w-[250px] ">
+    <img class="object-cover w-full h-[210px] md:h-full xl:max-h-[24rem]" src="assets/harley.jpg" alt="">
+  </div>
+  <div class="flex flex-col basis-[58%] grow overflow-auto">
+    <div class="mx-auto sm:ml-[60px] xl:mx-auto mt-[20px] sm:mt-[60px] mb-[15px] sm:mb-[40px] relative text-white text-base sm:text-4xl font-normal hans-font tracking-[5px] sm:tracking-[16.60px] xl:pl-[16.60px]">BUT WHO IS HARLEY?</div>
+    <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Hi! I'm Harley Van Acabal. A part-time developer and tech nerd. I'm interested in new and bleeding-edge technology and hope that one day, I'll be at the forefront of developing the future.<br><br> I also play online games like Mobile Legends; at the same time, I appreciate and enjoy the analog nature of tabletop games.</div>
+  </div>
+</div>
+
+  <!-- Headline and featured site-->
+<div class="flex flex-col h-fit my-[80px]">
+  
+  <div class="flex w-full justify-center">
+    <div class="pb-[50px] text-stone-900 text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">HE GOT ANY PROJECTS?</div>
+  </div>
+
+  <div class="mx-[30px] md:mx-[120px]">
+    <!-- Featured site -->
+    <div class="h-full border-8 border-orange-500 mb-[50px]">
+      <img class="h-full" src="assets/featured_site.png" alt="">
+    </div>
+    
+  <!-- Link and info -->
+    <div class="flex mb-[50px] items-center">
+      <a href="http://duscianspectrum.com/">
+        <button class="text-xs md:text-xl ibm-font font-bold 
+      bg-stone-900 hover:text-orange-500 transition-all text-white py-1 md:py-2 px-2 md:px-4">
+      GO TO THE WEBSITE
+      </button>
+    </a>
+      
+      <div class="text-stone-900 text-xs md:text-xl font-bold ibm-font ml-[25px]">Spectrum 2023 website</div>
+    </div>
+
+    <!-- Other projects -->
+    <div class="flex w-full justify-center">
+      <div class="text-stone-900 text-xs md:text-sm lg:text-base font-normal hans-font tracking-[3px] md:tracking-[18.60px] mr-[-3px] md:mr-[-18.60px]">OTHER PROJECTS COMING SOON</div>
+    </div> 
+  </div>
+</div>
+
+  <!-- Hobbies -->
+  <div class="h-fit py-9 bg-cover border-y-4 border-stone-900 mb-[80px] bg-stone-900">
+    <div class="flex justify-center"><span class="text-white text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">HOBBIES</span></div>
+    <div class="pt-[50px] grid grid-cols-69 gap-[35px] mx-[30px] md:mx-[90px]">
+      <div class="flex flex-col items-center">
+        <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">COFFEE</div>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/coffee.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">When I have time in the morning, I do my coffee routine. Right now, my setup is a Timemore C2 grinder and an Aeropress. Planning to buy new equipment soon.</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">BOARD GAMES</div>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/root.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I usually play tabletop board games on Friday nights with a couple of friends from Cebu board gamers. My favorite board game right now is the strategy board game, Root.</span>
+        </div>
+      </div>  
+      <div class="flex flex-col items-center">
+        <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">FOOD</div>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/crepe.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I'm a big fan of good food; I always try to seek out the best place to eat and, from time to time, I make my own homemade meals.</span>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="h-fit mb-[80px]">
+    <div class="flex justify-center"><span class="text-stone-900 text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">SKILLS</span></div>
+    <div class="pt-[50px] grid grid-rows-3 gap-[35px] mx-[30px] md:mx-[90px]">
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-center min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/rock.jpg');">
+          <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Curiosity</div>
+          <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Being curious is one of the main skills. Being hungry for knowledge comes with the benefit of questioning the status quo and pushing our knowledge forward.</span>
+      </div>
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/smoke.jpg');">
+        <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Persistent</div>
+        <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Never back down, never what. Quitting is always the last option for me, trying to find a way to make it work is something I am good at.</span>
+      </div>
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/river.jpg');">
+        <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Openess</div>
+        <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">I am open to new ideas, even ones that go against what I currently believe. Being open to new ideas, allows it to flourish and grow, and advance our knowledge.</span>
+      </div>
+    </div>
+  </div>
+
+<!-- Contact me -->
+<div class="bg-stone-900 flex flex-col md:flex-row">
+    <div class="flex flex-col basis-[9/10] overflow-auto">
+      <div class="mx-auto sm:ml-[60px] xl:mx-auto mt-[20px] sm:mt-[60px] mb-[15px] sm:mb-[40px] relative text-white text-base sm:text-2xl font-normal hans-font tracking-[5px] sm:tracking-[16.60px] xl:pl-[16.60px]">LET'S GRAB A COFFEE</div>
+      <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Want to get in touch? I'd love to hear from you! Whether you have a question, a project idea, or just want to chat, feel free to reach out. The best way to connect is through email or social media.<br><br><span> And hey, if you're in the neighborhood, let's grab a coffee!</span><br><br>
+        <span>
+         Email: <a class="text-orange-500" href="mailto:developer@harleyvan.com">developer@harleyvan.com</a>
+        </span>    
+      </div>
+    </div>
+    <div class="basis-1 grow border-8 sm:border-[30px] border-orange-500 min-w-[350px] ">
+      <img class="object-cover w-full h-[240px] md:h-full xl:max-h-[380px]" src="assets/flower.JPG" alt="">
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="flex flex-col md:flex-row w-full h-[101px] relative bg-stone-900 items-center justify-center md:justify-start mt-[80px]">
+  <div class="flex">
+      <a href="https://github.com/Depyter">
+      <img src="assets/github.svg" alt="GitHub" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.facebook.com/harley.acabal/">
+      <img src="assets/facebook.svg" alt="Facebook" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.instagram.com/harleyacabal/">
+      <img src="assets/instagram.png" alt="Instagram" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="www.linkedin.com/in/depyter-harleyvan">
+      <img src="assets/linkedin.svg" alt="LinkedIn" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    
+  </div>
+  <div class="text-white text-sm ibm-font mt-3 md:mt-0">designed by harley van acabal</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

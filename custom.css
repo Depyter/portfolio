@@ -4,6 +4,7 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
 /* Your additional custom styles go here */
@@ -16,28 +17,31 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
-#temp-banner {
-color: #1E1E1E;
-font-family: Black Han Sans;
-font-size: 2rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 2rem;
-}
-  
-#temp-banner-2 {
-color: #F70;
-font-family: Black Han Sans;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.5rem;
+.roboto-font {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .text-outline {
     -webkit-text-stroke: 1px #FF7600;
   }
-  
 
+.menu-transition {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.menu-transition-closed {
+    max-height: 0px;
+    transition: max-height 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.menu-transition a {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+.menu-transition-closed a {
+    opacity: 0;
+    transition-delay: 0.25s ease-in-out; 
+  }

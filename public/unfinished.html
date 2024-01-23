@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css"> <!-- Include the Tailwind CSS output file -->
+  <title>harleyvan</title>
+</head>
+<body>
+<!-- Nav bar div -->
+<div class="w-full h-20 relative border-b-2 md:border-b-4 border-stone-900 z-50" id="navbar">
+  <!-- Harley logo sorta-->
+  <div class="h-full px-2 absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight flex items-center ml-5">
+    <a href="index.html">
+      harleyvan
+    </a> 
+  </div>
+  <div class="flex ml-auto mr-5 w-fit h-full items-center ">
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
+
+    <!-- Hamburger Icon -->
+    <div class="sm:hidden" id="mobile-menu-toggle">
+        <img src="assets/burger.svg" alt="Hamburger Icon" class="cursor-pointer block text-black hover:text-gray-300 px-2" id="menu-icon">
+    </div>
+    
+  </div>
+
+  <!-- Mobile menu-->
+  <div class="bg-white menu-transition-closed border-b-2 border-stone-900" id="mobile-menu">
+    <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
+  </div>
+</div>
+
+<!-- SO like-->
+<div class="flex w-full justify-center mt-[80px]">
+    <div class="ibm-font text-lg md:text-2xl mx-[60px] max-w-[52ch]">So like, I'm kinda not done with this site.I'll be busy with other things like college and other side projects, however, slowly I'll work on this in the background. 
+    <br><br><span class="text-orange-500">For now, have a great day!</span></div>
+</div>
+
+
+<!-- Footer edit -->
+<div class="flex flex-col md:flex-row w-full h-[101px] absolute bottom-0 left-0 bg-stone-900 items-center justify-center md:justify-start mt-[70vh]">
+  <div class="flex">
+      <a href="https://github.com/Depyter">
+      <img src="assets/github.svg" alt="GitHub" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.facebook.com/harley.acabal/">
+      <img src="assets/facebook.svg" alt="Facebook" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="https://www.instagram.com/harleyacabal/">
+      <img src="assets/instagram.png" alt="Instagram" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    <a href="www.linkedin.com/in/depyter-harleyvan">
+      <img src="assets/linkedin.svg" alt="LinkedIn" class="max-h-[20px] md:max-h-[30px] mx-[15px] md:mx-[25px]">
+    </a>
+    
+  </div>
+  <div class="text-white text-sm ibm-font mt-3 md:mt-0">designed by harley van acabal</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
