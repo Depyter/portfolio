@@ -765,6 +765,10 @@ video {
   min-width: 350px;
 }
 
+.max-w-\[32ch\]{
+  max-width: 32ch;
+}
+
 .max-w-\[35ch\]{
   max-width: 35ch;
 }
@@ -849,8 +853,8 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-69{
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+.grid-cols-00{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .grid-rows-3{
@@ -1234,6 +1238,10 @@ video {
 
   .md\:max-w-\[55ch\]{
     max-width: 55ch;
+  }
+
+  .md\:grid-cols-69{
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 
   .md\:flex-row{
