@@ -24,3 +24,24 @@
 .text-outline {
     -webkit-text-stroke: 1px #FF7600;
   }
+
+.menu-transition {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.menu-transition-closed {
+    max-height: 0px;
+    transition: max-height 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.menu-transition a {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+.menu-transition-closed a {
+    opacity: 0;
+    transition-delay: 0.25s ease-in-out; 
+  }

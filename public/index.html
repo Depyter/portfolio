@@ -8,16 +8,16 @@
 </head>
 <body>
 <!-- Nav bar div -->
-<div class="w-full h-20 relative border-b-2 md:border-b-4 border-stone-900" id="navbar">
+<div class="w-full h-20 relative border-b-2 md:border-b-4 border-stone-900 z-50" id="navbar">
   <!-- Harley logo sorta-->
   <div class="h-full px-2 absolute text-orange-500 text-base sm:text-[32px] font-bold ibm-font tracking-tight flex items-center ml-5">
-    <a href="#">
+    <a href="index.html">
       harleyvan
     </a> 
   </div>
   <div class="flex ml-auto mr-5 w-fit h-full items-center ">
-    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">Projects</a></div>
-    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="#">About</a></div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="px-3 hidden sm:inline-block relative text-2xl font-normal ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
 
     <!-- Hamburger Icon -->
     <div class="sm:hidden" id="mobile-menu-toggle">
@@ -27,9 +27,9 @@
   </div>
 
   <!-- Mobile menu-->
-  <div class="max-h-0 transition-all bg-white overflow-hidden mt-[-12px]" id="mobile-menu">
-    <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">Projects</a></div>
-    <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="#">About</a></div>
+  <div class="bg-white menu-transition-closed border-b-2 border-stone-900" id="mobile-menu">
+    <div class="pl-2 p-3 pt-0 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">Projects</a></div>
+    <div class="pl-2 p-3 relative text-xs font-normal mx-5 ibm-font tracking-tight"><a href="unfinished.html">About</a></div>
   </div>
 </div>
 
@@ -43,12 +43,11 @@
 <!-- About me -->
 <div class="bg-stone-900 flex flex-col md:flex-row">
   <div class="basis-[42%] shrink border-8 sm:border-[30px] border-orange-500 min-w-[250px] ">
-    <img class="object-cover w-full h-[210px] md:h-full xl:max-h-[380px]" src="assets/harley.jpg" alt="">
+    <img class="object-cover w-full h-[210px] md:h-full xl:max-h-[24rem]" src="assets/harley.jpg" alt="">
   </div>
   <div class="flex flex-col basis-[58%] grow overflow-auto">
     <div class="mx-auto sm:ml-[60px] xl:mx-auto mt-[20px] sm:mt-[60px] mb-[15px] sm:mb-[40px] relative text-white text-base sm:text-4xl font-normal hans-font tracking-[5px] sm:tracking-[16.60px] xl:pl-[16.60px]">BUT WHO IS HARLEY?</div>
-    <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Hi! I'm Harley Van Acabal. A partime-developer and tech nerd. I take interest in new and bleeding edge technology and hope that one day, I'll be the at the forefront on it's development. I also play online games like Mobile Legends, but at the same time, I appreciate and enjoy the analog nature of tabletop games.</div>
-    <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">One thing you should know about me is that, I can be persistent, doing everything to achieve my goals.</div>
+    <div class="ml-[35px] sm:ml-[60px] mr-[60px] mb-[15px] sm:mb-[40px] relative text-white text-xs sm:text-lg font-normal roboto-font" style="max-width: 52ch;">Hi! I'm Harley Van Acabal. A part-time developer and tech nerd. I'm interested in new and bleeding-edge technology and hope that one day, I'll be at the forefront of developing the future.<br><br> I also play online games like Mobile Legends; at the same time, I appreciate and enjoy the analog nature of tabletop games.</div>
   </div>
 </div>
 
@@ -90,20 +89,20 @@
     <div class="pt-[50px] grid grid-cols-69 gap-[35px] mx-[30px] md:mx-[90px]">
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">COFFEE</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[250px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/coffee.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">When I have time in the morning, I do my coffee routine. Right now, my setup is a Timemore C40 grinder and an aeropress. Planning to buy new equipment soon.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/coffee.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">When I have time in the morning, I do my coffee routine. Right now, my setup is a Timemore C2 grinder and an Aeropress. Planning to buy new equipment soon.</span>
         </div>
       </div>
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">BOARD GAMES</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[250px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/root.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I usually play tabletop board games on friday nights with a couple of friends from Cebu board gamers. My favorite board game right now is the strategy game, Root.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/root.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I usually play tabletop board games on Friday nights with a couple of friends from Cebu board gamers. My favorite board game right now is the strategy board game, Root.</span>
         </div>
       </div>  
       <div class="flex flex-col items-center">
         <div class="hans-font text-lg md:text-xl text-white w-fit tracking-[6px] mr-[-6px]">FOOD</div>
-        <div class="flex h-fit w-full bg-cover bg-center min-h-[150px] md:min-h-[250px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/crepe.jpg');">     
-          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I'm a big fan of good food, I always try to seek out the best place to eat and from time to time, I make my own homemade meals.</span>
+        <div class="flex h-fit w-full bg-cover bg-center min-h-[160px] md:min-h-[270px] border-b-4 border-orange-500 justify-center" style="background-image: linear-gradient(to top, rgba(28,25,23,0) 0%,rgba(28,25,23,0.25) 20%,rgba(28,25,23,1) 100%), url('assets/crepe.jpg');">     
+          <span class="ibm-font text-white mt-[32px] mx-[16px] text-xs md:text-base max-w-[35ch] md:max-w-[55ch]">I'm a big fan of good food; I always try to seek out the best place to eat and, from time to time, I make my own homemade meals.</span>
         </div>
       </div>     
     </div>
@@ -113,9 +112,9 @@
   <div class="h-fit mb-[80px]">
     <div class="flex justify-center"><span class="text-stone-900 text-xl md:text-2xl lg:text-4xl font-normal hans-font tracking-[6px] md:tracking-[21.60px] mr-[-6px] md:mr-[-21.60px]">SKILLS</span></div>
     <div class="pt-[50px] grid grid-rows-3 gap-[35px] mx-[30px] md:mx-[90px]">
-      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/rock.jpg');">
+      <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-center min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/rock.jpg');">
           <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Curiosity</div>
-          <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Being curious is one of main skills. Being hungry for knowledge comes with the benefit of questioning the status quo and pushing our knowledge forward.</span>
+          <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">Being curious is one of the main skills. Being hungry for knowledge comes with the benefit of questioning the status quo and pushing our knowledge forward.</span>
       </div>
       <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/smoke.jpg');">
         <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Persistent</div>
@@ -123,7 +122,7 @@
       </div>
       <div class="flex flex-col md:flex-row border-b-4 border-orange-500 h-fit w-full bg-cover bg-right min-h-[150px] items-center" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.95) 35%,rgba(255, 255, 255,1) 100%), url('assets/river.jpg');">
         <div class="hans-font tracking-[6px] mr-[-6px] ml-[32px] my-[24px] md:my-auto">Openess</div>
-        <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">I open to new ideas, even ones that go against what I currently believe. Being open to new ideas, allow it to flourish and grow, and advance our knowledge.</span>
+        <span class="ibm-font text-stone-900 max-w-[35ch] md:max-w-[55ch] mx-[32px] md:my-auto mb-[16px] text-xs md:text-base">I am open to new ideas, even ones that go against what I currently believe. Being open to new ideas, allows it to flourish and grow, and advance our knowledge.</span>
       </div>
     </div>
   </div>
@@ -162,71 +161,6 @@
   </div>
   <div class="text-white text-sm ibm-font mt-3 md:mt-0">designed by harley van acabal</div>
 </div>
-
-<script>
-
-var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-var mobileMenu = document.getElementById('mobile-menu');
-var menuIcon = document.getElementById('menu-icon');
-var heroOutline = document.getElementById('hero-outline');
-
-function isScreenWidthGreaterThan640() {
-  return window.innerWidth >= 640;
-}
-
-mobileMenuToggle.addEventListener('click', function () {
-  // Toggle visibility using Tailwind classes
-  if (!mobileMenu.classList.contains('max-h-20')) {
-    menuIcon.src = 'assets/close.svg';
-    mobileMenu.classList.remove('max-h-0');
-    mobileMenu.classList.add('max-h-20');
-    mobileMenu.classList.add('border-b-2');
-    mobileMenu.classList.add('border-stone-900');
-  } else {
-    menuIcon.src = 'assets/burger.svg';
-    mobileMenu.classList.remove('max-h-20');
-    mobileMenu.classList.add('max-h-0');
-    mobileMenu.classList.remove('border-b-2');
-    mobileMenu.classList.remove('border-stone-900');
-  }
-  
-});
-
-if (isScreenWidthGreaterThan640()) {
-  heroOutline.style.webkitTextStrokeWidth = "3px";
-}
-
-// Debounce function
-function debounce(func, wait) {
-  var timeout;
-  return function() {
-    var context = this, args = arguments;
-    var later = function() {
-      timeout = null;
-      func.apply(context, args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-};
-
-var optimizedResize = debounce(function() {
-
-  if (window.innerWidth >= 640) {
-    mobileMenu.classList.remove('max-h-20');
-    mobileMenu.classList.add('max-h-0');
-    mobileMenu.classList.remove('border-b-2');
-    mobileMenu.classList.remove('border-stone-900');
-    menuIcon.src = 'assets/burger.svg';
-    heroOutline.style.webkitTextStrokeWidth = "3px";
-  } else {
-    heroOutline.style.webkitTextStrokeWidth = "1px";
-  }
-}, 20);
-
-window.addEventListener('resize', optimizedResize);
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
