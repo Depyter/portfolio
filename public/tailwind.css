@@ -853,7 +853,7 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-00{
+.grid-cols-base{
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
@@ -1240,10 +1240,6 @@ video {
     max-width: 55ch;
   }
 
-  .md\:grid-cols-69{
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1305,6 +1301,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:grid-cols-md{
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
