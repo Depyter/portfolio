@@ -580,11 +580,6 @@ video {
   margin-right: 15px;
 }
 
-.mx-\[16px\]{
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
 .mx-\[30px\]{
   margin-left: 30px;
   margin-right: 30px;
@@ -765,6 +760,10 @@ video {
   min-width: 350px;
 }
 
+.max-w-\[32ch\]{
+  max-width: 32ch;
+}
+
 .max-w-\[35ch\]{
   max-width: 35ch;
 }
@@ -850,7 +849,7 @@ video {
 }
 
 .grid-cols-69{
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .grid-rows-3{

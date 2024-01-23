@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     gridTemplateColumns:{
-      '69': 'repeat(auto-fill, minmax(360px, 1fr))',
+      '69': 'repeat(auto-fill, minmax(280px, 1fr))',
     }
   }
 };
